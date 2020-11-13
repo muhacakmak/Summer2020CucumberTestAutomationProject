@@ -25,7 +25,7 @@ public class Hooks {
     @Before
     public void setup(Scenario scenario) {
         System.out.println("::: Starting Automation:::");
-        Driver.getDriver().manage().window().maximize();
+      //  Driver.getDriver().manage().window().maximize();
         Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 //    this hook will run only before scenarios with a tag @db
