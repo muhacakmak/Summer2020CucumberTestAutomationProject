@@ -46,7 +46,7 @@ public class Driver {
 //                    ChromeOptions chromeOptions = new ChromeOptions();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("chrome");
-                        URL gridUrl = new URL("http://3.91.17.40:4444/wd/hub");
+                        URL gridUrl = new URL("http://34.229.154:4444/wd/hub");
                         driver = new RemoteWebDriver(gridUrl, desiredCapabilities);
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -58,13 +58,11 @@ public class Driver {
 //                    ChromeOptions chromeOptions = new ChromeOptions();
                         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                         desiredCapabilities.setBrowserName("firefox");
-                        URL gridUrl = new URL("http://3.91.17.40:4444/wd/hub");
+                        URL gridUrl = new URL("http://34.229.154:4444/wd/hub");
                         driver = new RemoteWebDriver(gridUrl, desiredCapabilities);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    break;
-
                 default:
                     throw new RuntimeException("No such a browser yet!");
             }
