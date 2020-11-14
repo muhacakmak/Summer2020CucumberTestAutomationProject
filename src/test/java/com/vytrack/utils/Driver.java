@@ -63,6 +63,7 @@ public class Driver {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+                    break;
                 default:
                     throw new RuntimeException("No such a browser yet!");
             }
